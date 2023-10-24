@@ -52,7 +52,7 @@ function getCanvasMedia(stream: MediaStream) {
   const width = imgOffset.width;
   const height = imgOffset.height;
 
-  const flag: string = 'ontimeupdate'; // 'setInterval', 'requestAnimationFrame', 'ontimeupdate', 'none'
+  const flag: string = 'requestAnimationFrame'; // 'setInterval', 'requestAnimationFrame', 'ontimeupdate', 'none'
   // ngrok http 3000 --host-header="localhost:3000"
 
   switch (flag) {
