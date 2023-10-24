@@ -21,15 +21,13 @@ export default function useRoom(localTracks: LocalTrack[], onError: Callback, op
   const _printNetworkQualityStats = (networkQualityLevel: any, networkQualityStats: any) => {
     // Print in console the networkQualityLevel using bars
     // @ts-ignore
-    console.log(
-      {
+    console.log({
         1: '▃',
         2: '▃▄',
         3: '▃▄▅',
         4: '▃▄▅▆',
         5: '▃▄▅▆▇',
-      }[networkQualityLevel] || ''
-    );
+      }[networkQualityLevel] || '');
 
     if (networkQualityStats) {
       // Print in console the networkQualityStats, which is non-null only if Network Quality
