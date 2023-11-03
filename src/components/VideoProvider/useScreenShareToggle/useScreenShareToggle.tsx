@@ -66,9 +66,10 @@ export default function useScreenShareToggle(room: Room | null, onError: any) {
 
           // NOTE(mmalavalli): Most modern versions of Chrome support the Insertable Streams API, which is a much more efficient
           // way of processing individual video frames. So, we use this API to crop the screen share video frames.
-          // @ts-ignore
           if (
+            // @ts-ignore
             typeof MediaStreamTrackGenerator !== 'undefined' &&
+            // @ts-ignore
             typeof MediaStreamTrackProcessor !== 'undefined' &&
             typeof TransformStream !== 'undefined'
           ) {
