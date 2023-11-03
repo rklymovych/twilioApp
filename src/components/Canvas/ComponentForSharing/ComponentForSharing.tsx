@@ -18,5 +18,11 @@ export default function ComponentForSharing() {
 
   makeFontSize(100, 6);
 
-  return <div ref={myRef} style={{ background: 'white', width: '65vw', height: '100vh', overflowY: 'scroll' }}></div>;
+  return (
+    <div
+      id="slideShare"
+      ref={myRef}
+      style={{ background: 'white', width: '65vw', height: '100vh', overflowY: 'scroll' }}
+    ></div>
+  );
 }
